@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Prompt:wght@300-600&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    background-image: url(https://image.freepik.com/free-photo/silhouette-person-standing-top-hill-beautiful-colorful-sky-morning_181624-24501.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.globe img {
+    margin: 120px 30% 10px;
+    width: 50px;
+    animation: globeAnimation 5s;
+    animation-timing-function: ease-in-out;
+}
+.globe h1{
+    font-family: 'Prompt', sans-serif;
+    margin-left: 50px;
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: center;
+    font-size: 3.6rem;
+    font-weight: 600;
+    text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.753);
+}
+
+@keyframes globeAnimation {
+    0% {opacity: 0%;}
+    50% {transform: translateX(1400%); opacity: 100%}
+    100% {opacity: 0%;}
+}  
+
+.icon {
+    display: flex;
+    justify-content: center;
+}
+
+.icon img {
+    width: 40px;
+    margin-right: 10px;
+}
+
+.icon img:hover {
+    transform: scale(1.5) rotate(-45deg);
+    animation-timing-function: ease-in-out;
+}
+
+button {
+    font-family: 'Prompt', sans-serif;
+    font-weight: 300;
+    padding: 10px;
+    background-color: #d9905b;
+    color: #fff;
+    font-weight: 500;
+    border-radius: 10px;
+    border:none;
+}    
+
+button:hover {
+    width: 200px;
+    background-color:#205491;
+    color: #fff;
+    transition-duration: 0.5s;
+}
